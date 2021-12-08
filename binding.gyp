@@ -250,7 +250,7 @@
             'action': [
               'install_name_tool',
               '-change',
-              '<!@(otool -D `curl-config --prefix`/lib/libcurl.dylib | sed -n 2p)',
+              '<!@(otool -D `curl-config --prefix`/local/opt/curl/lib/libcurl.dylib | sed -n 2p)',
               '@rpath/libcurl.dylib',
               '<(module_path)/<(module_name).node'
             ],
